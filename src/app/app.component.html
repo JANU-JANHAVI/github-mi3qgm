@@ -1,0 +1,25 @@
+<head>
+  <title>MY STORE</title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="header">
+    <mat-toolbar class="bar">
+      <button class="product-link"(click)="onButtonClicked()">MY STORE</button>
+      <span class="sample"></span>
+      <button mat-icon-button class="favorite-icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="share-icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <button mat-icon-button class="search-icon">
+    <mat-icon>search</mat-icon>
+  </button>
+  </nav>
+  <router-outlet></router-outlet>
+</body>
